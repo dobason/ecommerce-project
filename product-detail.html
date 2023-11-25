@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product detail</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="./assets/css/product-detail.css">
+</head>
+<body>
+    <header class="header">
+        <a href="" class="logo">
+            <img src="./assets/img/logohome.png" alt="">
+            <li>CYGNUS COFFEE</li>
+        </a>
+           
+        <nav class="navbar">
+            <a href="./home.html">HOME</a>
+            <a href="">PRODUCTS</a>
+            <a href="./about.html">ABOUT US</a>
+            <a href="">CONTACT</a>
+        </nav>
+    
+        <div class="icons">
+            <!-- <div class="search-box">
+                <input type="text" id="search-text" placeholder="search here...">
+                <button id="search-btn">
+                    <i class="fa-solid fa-magnifying-glass custom-icon-size"></i>
+                </button>
+            </div> -->
+            <div id="profile-btn">
+                <i class="bi bi-person-circle custom-icon-size "></i>
+            </div>
+            <div id="cart-btn">
+                <i class="bi bi-cart4 custom-icon-size "></i>
+            </div>
+            <div id="menu-btn">
+                <i class="fa-solid fa-bars custom-icon-size"></i>
+            </div>
+        </div>     
+    
+    </header>
+    <div class="product-contain">
+        <div class="middle">
+            <img src="./assets/img/Product/ca-phe2.jpg">
+        </div>
+        <div class="right">
+            <h3>Capuchino</h3>
+        <div class="rating">
+            <div>
+                <img src="./assets/img/Product/Vector (1).svg">
+                <img src="./assets/img/Product/Vector (1).svg">
+                <img src="./assets/img/Product/Vector (1).svg">
+                <img src="./assets/img/Product/Vector (1).svg">
+                <img src="./assets/img/Product/Vector (2).svg">
+            </div>
+            <div>
+                <p>(150 customers)</p>
+            </div>
+            <div>
+                <p>In stock</p>
+            </div>
+        </div>
+        <div>
+            <p>150k</p>
+        </div>
+        <div>
+            <p>DESCRIBE PRODUCTION</p>
+        </div>
+        <hr/>
+        <div>
+            <div>
+                <div class ="size">
+                <div>
+                    <p>Size:</p>
+                </div>
+                <div>
+                    <input type="button" value="S">
+                </div>
+                <div>
+                    <input type="button" value="l">
+                </div>
+                <div>
+                    <input type="button" value="XL">
+                </div>
+            </div>
+            <div class="number">
+                <label for="quantity"></label>
+                <input type="number" id="quantity" min="1" max="5">
+                <input type="submit" value="Buy Now">
+            </div>
+
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="contact">
+                <ul class="contact__list">
+                    <h4>Contact</h4>
+                    <li><a href="tel:+123456789">Hotline: 123 456 789</a></li>
+                    <li><a href="mailto: cygnuscoffee@gmail.com">Email: cygnuscoffee@gmail.com</a></li>
+                    <ul class="contact__list-icon">
+                        <li><a href=""><i class="fa-brands fa-square-facebook"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-square-twitter"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-square-instagram"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                    </ul>
+                </ul>
+            </div>
+            
+            <div class="account">
+                <ul class="account__list">
+                    <h4>Account</h4>
+                    <li><a href="">My account</a></li>
+                    <li><a href="">Wishlist</a></li>
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">Online payment</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Link to product profile page
+       let profileBtn = document.querySelector('#profile-btn');
+       profileBtn.onclick = () => {
+            window.location = './login.html';
+       };
+
+       // Link to product cart page
+       let cartBtn = document.querySelector('#cart-btn');
+       cartBtn.onclick = () => {
+            window.location = './cart.html';
+       };
+  </script>
+</body>
+</html>

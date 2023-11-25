@@ -1,0 +1,135 @@
+
+h2.profile{
+   text-align: center;
+   margin-left: 0px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.reset {
+    display: flex;
+    justify-content: right;
+    flex:1;
+    margin-top: 15px;
+}
+label {
+    opacity: 0.4;
+}
+
+/*PROFILES*/
+body {
+    display: flex;
+    flex-direction: column;
+    border-color: #F5F5F5F5; 
+    border-style: solid;
+}
+
+.content {
+    display: flex;
+    padding: 0 10%;
+}
+
+
+.Box {
+    display: flex;
+}
+
+.Infor_Mail {
+    margin-right: 10%;
+}
+
+.passwords {
+    width:100%;
+    margin-top: 11px;
+}
+
+.password #confirm-password {
+    margin-top:15px;
+}
+
+.Coffee{
+    width:64px;
+    flex-direction: column;
+    margin-right:20px;
+}
+
+.left-section {
+    flex: 1;
+    margin-right: 20%;
+}
+
+.right-section {
+    flex: 1;
+}
+
+.small-container{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Subtotal{
+    display:flex ;
+    justify-content: space-between;
+}
+
+.Shipping{
+    display:flex ;
+    justify-content: space-between;
+}
+
+.Total{
+    display:flex ;
+    justify-content: space-between;
+}
+
+.product-name{
+    display:flex;
+    align-items: center;
+    height: 100%;
+}
+
+
+
+.transfer{
+    margin-top:5px;
+}
+
+.check{
+    display:flex;
+    align-items: center;
+}
+
+.check label{
+    color:#000;
+    opacity:1;
+}
+
+.cash{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.transfer label{
+    color:#000;
+    opacity: 1;
+}
+
+.bank img {
+    height: 10px;
+}
+
+.coupon-section{
+    display:flex;
+    margin-bottom: 25px;
+}
+
+.coupon-section .button{
+    margin-left: 15px;
+}
+
+

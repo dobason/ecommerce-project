@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+html {
+    font-family: Poppins;
+    font-size: 14px;
+    color: #000;
+}
+
+h2 {
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 1.44px;
+    margin-left: 10%;
+}
+
+input {
+    border:  0;
+    border-radius: 4px;
+    background-color: #F5F5F5F5;
+    font-size: 14px;
+    
+}
+
+input[type ="reset"]{
+    background-color: white;
+    color: #000;
+    padding: 16px;
+}
+
+input[type ="submit"] {
+    width: 30%;
+    background-color: red;
+    color: white;
+}
+
+input[type="text"], input[type="email"], input[type = "password"] {
+   width: 100%;
+   padding: 16px;
+   box-sizing: border-box; /*border-box: tạo khoảng giới hạn của box*/
+}
+
+input[type="checkbox"]{
+    width:20px;
+    height:20px;
+    accent-color: red; /* đổi màu của nút*/
+}
+
+input[type="button"], input[type="submit"] {
+    background-color: red;
+    color: white;
+    padding: 16px;
+    height:48px;
+}
+
+hr{
+    width:100%;
+}
+
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #231c14;
+}
+
+.header ul li {
+    list-style-type: none;
+}
+
+.logo {
+ display: flex;
+}
+
+.logo li{
+    font-size: 1.6rem;
+    line-height: 3rem;
+    padding-top: 1rem;
+    padding-left: 0.5rem;
+    list-style: none;
+    color: #fff;
+}
+
+.logo li:hover{
+    cursor: pointer;
+    color: var(--main-color);
+}
+
+.header .logo img{
+    width: 5rem;
+    height: 5rem;
+}
+
+.header .navbar a{
+    margin: 0 2rem;
+    font-size: 1.6rem;
+    color: #fff;
+    
+}
+
+.header .navbar a:hover{
+    color: var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+}
+
+.icons{
+    display: flex;
+}
+
+.haeder .icons div{
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+
+.header .icons div:hover{
+    color: var(--main-color);
+}
+
+#menu-btn{
+    display: none;
+}
+
+#profile-btn{
+    height: 2.5rem;
+    width: 2.5rem;
+    padding: 0.7rem;
+}
+
+#cart-btn{
+    height: 2.5rem;
+    width: 2.5rem;
+    padding: 0.7rem;
+}
+
+#menu-btn{
+    height: 4.5rem;
+    width: 4.5rem;
+    padding: 1.2rem 1.5rem;
+}
+
+.header .search-box{
+    background: #fff;
+    display: flex;
+}
+
+.custom-icon-size {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+#search-text{
+    border: none;
+    outline: none;
+    width: 0;
+    background: #333;
+    font-size: 1.5rem;
+}
+
+.search-box:hover #search-text{
+    width: 20rem;
+    padding: 1rem 1.5rem;
+    background-color: #fff;
+    border-right: none;
+    
+}
+
+#search-btn:hover #search-box{
+    background-color: #fff;
+
+}
+
+#search-btn{
+    padding: 1.1rem 1.5rem;
+    background-color: #231c14;
+    cursor: pointer;
+}
+
+#search-btn:hover i{
+    color: #333;
+}
+
+.header #search-btn:hover{
+    background-color: #fff;
+}
+
+.profile-btn{
+    padding: 1rem 1.5rem;
+}
+
+#menu-btn{
+    display: none;
+}
+
+
+.footer{
+    background-color: #111;
+    color: #fff;
+    height: 20rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 1rem;  
+}
+
+.container-footer{
+    display: flex;
+    justify-content: space-between;
+    gap: 10rem;
+    margin-top: 2rem;  
+}
+
+.container-footer ul li {
+    list-style-type: none;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+.container-footer ul li a{
+    color: #fff;
+    
+}
+
+.contact ul li{
+    margin-top: 2rem;  
+
+}
+
+.contact__list-icon{
+    display: flex;
+}
+
+.contact__list-icon li{
+    margin-right: 1.5rem;
+}
+
+.contact__list-icon i:hover{
+    opacity: 10;
+}
+
+.account ul li{
+    margin-top: 2rem;
+    color: #fff;
+}
+
+@media (max-width: 1023px){
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding: 1.5rem 2rem;
+    }
+
+    section{
+        padding: 2rem;
+    }
+
+    #menu-btn{
+        display:inline-block ;
+    }
+
+    #profile-btn{
+        display: none;
+    }
+
+    #noti-btn{
+        display: none;
+    }
+
+    #cart-btn{
+        display: none;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top: -50rem;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        box-shadow: 0 0.4rem 0.4rem rgba(14 55 54 / 14%);
+        border-top: 0.2rem solid var(--main-color);
+        transition: 0.2s;
+        text-align: left;
+        
+    }
+
+    .header .navbar a:hover{
+        border: none;
+    }
+
+    .header .navbar.active{
+        top:100%;
+
+    }
+
+    .header .navbar a{
+        color: var(--black);
+        display: block;
+        margin: 1.5rem;
+        padding: .5rem;
+        font-size: 2rem;
+    }
+
+    .introduce-text,
+    .quality-text
+    .vision-text{
+        width: 100%;
+        
+    }
+
+    .introduce-img img, .quality-img img, .vision-img img {
+        width: 70%;
+    }
+
+    .introduce-text h4,
+    .quality-text h4,
+    .vision-text h4{
+    font-size: 1.8rem;
+    color: #333;
+    font-weight: 600;
+    }
+
+    .introduce-text p,
+    .quality-text p,
+    .vision-text p{
+    font-size: 1.6rem;
+    }
+
+    .introduce-text,
+    .quality-text,
+    .vision-text{
+    padding: 0;
+    }
+
+    .vision-text {
+        margin: 0 auto;
+    }
+
+    .container{
+        display: block;
+    }
+    
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .container{
+        display: block;
+    }
+
+    .introduce-text h4,
+    .quality-text h4,
+    .vision-text h4{
+    font-size: 1.8rem;
+    color: #333;
+    font-weight: 600;
+    }
+
+    .introduce-text p,
+    .quality-text p,
+    .vision-text p{
+    font-size: 1.4rem;
+    }
+
+    .introduce-text,
+    .quality-text,
+    .vision-text{
+    padding: 0;
+    }
+
+    .introduce-img img, .quality-img img, .vision-img img {
+        width: 70%;
+    }
+
+
+    .vision-text {
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width: 740px){
+    .vision-text{
+        margin: 0 auto;
+    }
+}
+
+.header .navbar a {
+    font-size: 1rem;
+}

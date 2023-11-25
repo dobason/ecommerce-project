@@ -1,0 +1,42 @@
+.product-contain {
+    display:flex;
+    flex-direction: row;
+    height: 600px;
+    margin-top: 110px;
+}
+.middle{
+    display:flex;
+    flex-direction: column;
+    flex:1;
+}
+
+.middle img {
+    width: 100%
+}
+
+.right{
+    display:flex;
+    flex-direction: column;
+    flex:1;
+}
+
+.rating {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.size {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 66%;
+}
+
+.number {
+    padding-top:8%;
+}
+
+#quantity {
+    width:12%;
+}
