@@ -3,6 +3,13 @@
 ## Overview  
 The **eCommerce Website** is a front-end project built using **HTML** and **CSS**. It showcases a modern and responsive design for online stores, featuring essential pages and layouts commonly seen in eCommerce websites. The project focuses on design, structure, and responsiveness to provide an engaging user experience.  
 
+## Screenshot
+![image](https://github.com/user-attachments/assets/b9dec522-db2b-49a5-8885-e4bd02e7571e)
+
+![image](https://github.com/user-attachments/assets/cf340bd9-b049-4a27-92df-2a6d8627f912)
+
+![image](https://github.com/user-attachments/assets/872c3fc5-df75-4c38-a9d5-351cd63cd701)
+
 ## Features  
 - **Home Page:**  
   - Banner section with featured products.  
